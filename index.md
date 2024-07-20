@@ -30,4 +30,4 @@ Hi, I'm making a blog. My goal for this page is to post my projects and investig
                   `!988888888899fT|!^"'
                     `!9899fT|!^"'
                       `!^"'
-From asciiart.eu
+from asciiart.eu
