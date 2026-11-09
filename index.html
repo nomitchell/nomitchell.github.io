@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Noah Mitchell is a machine learning researcher studying how models solve difficult, multi-step problems."
+      content="Noah Mitchell is a machine learning researcher working on reasoning, representation, reinforcement learning, and efficient model training."
     />
     <title>Noah Mitchell | Machine Learning Researcher</title>
     <link rel="canonical" href="https://nomitchell.github.io/" />
@@ -22,7 +22,7 @@
           "url": "https://nomitchell.github.io/",
           "image": "https://nomitchell.github.io/profile.jpg",
           "jobTitle": "Machine Learning Researcher",
-          "description": "Machine learning researcher studying how models solve difficult problems through theory and experiment.",
+          "description": "Machine learning researcher working on reasoning, representation, reinforcement learning, and efficient model training through theory and experiment.",
           "affiliation": {
             "@type": "CollegeOrUniversity",
             "name": "University of Ottawa",
@@ -51,6 +51,7 @@
       <nav aria-label="Primary navigation">
         <a href="#research">Research</a>
         <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#about">About</a>
       </nav>
     </header>
@@ -78,44 +79,34 @@
         <h2>Research</h2>
 
         <article class="publication">
-          <h3>Building State vs. Using State: Representation and Utilization in Multi-Step Tasks</h3>
-          <p class="meta">Noah Mitchell · Preprint</p>
-          <p>
-            Task-agnostic methods for improving downstream performance by helping
-            language models and reinforcement-learning agents use learned internal
-            state more effectively.
-          </p>
-          <p><a href="https://drive.google.com/file/d/1hDI-BCYn-GuKxe_U9WSLqBFvFeeJhH01/view?usp=sharing" target="_blank" rel="noreferrer">Preprint</a></p>
-        </article>
-
-        <article class="publication">
           <h3>Amortizing Search Under Inference Budgets for LLM Reasoning</h3>
           <p class="meta">Noah Mitchell · Preprint</p>
           <p>
-            A learned search controller that amortizes verifier-guided search,
-            improving hard-problem solve rates while reducing inference compute.
+            A learned verifier-guided search controller for inference-time reasoning
+            that improves hard-task solve rates while reducing inference compute.
           </p>
-          <p><a href="https://drive.google.com/file/d/1hDI-BCYn-GuKxe_U9WSLqBFvFeeJhH01/view?usp=sharing" target="_blank" rel="noreferrer">Preprint</a></p>
+          <p><a href="https://drive.google.com/file/d/1MoIvNf8LMcBY_o6o8Poh4MuiAbBBe43R/view?usp=sharing" target="_blank" rel="noreferrer">Paper</a></p>
         </article>
 
         <article class="publication">
-          <h3>What Must a World Model Preserve for Planning?</h3>
+          <h3>Building State vs. Using State: Representation and Utilization in Multi-Step Tasks</h3>
           <p class="meta">Noah Mitchell · Preprint</p>
           <p>
-            Decision-preserving world-model compression that retains near-full
-            planning performance using one percent of the original state space.
+            Task-agnostic methods that improve learned-state utilization in language
+            models and reinforcement-learning agents on multi-step tasks.
           </p>
-          <p><a href="https://drive.google.com/file/d/1zKCSmsxAXoUO6A3tvebPNMIRCH8LmnbF/view?usp=sharing" target="_blank" rel="noreferrer">Preprint</a></p>
+          <p><a href="https://drive.google.com/file/d/1hDI-BCYn-GuKxe_U9WSLqBFvFeeJhH01/view?usp=sharing" target="_blank" rel="noreferrer">Paper</a></p>
         </article>
 
         <article class="publication">
           <h3>The Cost of Absolute Position: A Spread–Expressivity Tradeoff in Transformers</h3>
           <p class="meta">Noah Mitchell*, Isaac Gabriel*, Alexander Wyatt* · Equal contribution · Accepted at NeurIPS 2026</p>
           <p>
-            An empirical study of positional representation in GPT-2-style
-            transformers, with experiments scaling to 1.2B parameters on H100s.
+            A study of transformer expressivity and positional information, with
+            GPT-2-style experiments scaling to 1.2B parameters on WikiText using
+            PyTorch DDP and H100 GPUs.
           </p>
-          <p><a href="https://drive.google.com/file/d/1b3HNeWrofWX1CAb_ikpg_JeEbODguAbm/view?usp=sharing" target="_blank" rel="noreferrer">Preprint</a></p>
+          <p><a href="https://drive.google.com/file/d/1b3HNeWrofWX1CAb_ikpg_JeEbODguAbm/view?usp=sharing" target="_blank" rel="noreferrer">Paper</a></p>
         </article>
       </section>
 
@@ -128,10 +119,10 @@
             <p class="meta">Tower Research Capital · Montréal</p>
           </div>
           <p class="date">May–Sep 2026</p>
-          <p class="description">
-            Worked on autonomous data and quantitative-research systems, alongside
-            large deep-learning models for market features.
-          </p>
+          <ul class="description-list">
+            <li>Designed and evaluated autonomous LLM data agents for subject-matter experts, automating data discovery and reducing a multi-year backlog; built Python and SQL data-processing and retrieval workflows using NumPy and pandas.</li>
+            <li>Developed agentic quantitative-research pipelines to mine data sources, propose candidate signals, and validate hypotheses; trained deep-learning models on market features with reproducible evaluation.</li>
+          </ul>
         </div>
 
         <div class="job">
@@ -140,33 +131,83 @@
             <p class="meta">University of Ottawa</p>
           </div>
           <p class="date">Dec 2024–May 2026</p>
-          <p class="description">
-            Developed adversarially robust quantization methods and ran reproducible
-            multi-node H100 experiments on national HPC infrastructure.
-          </p>
+          <ul class="description-list">
+            <li>Co-developed Margin-Aware Quantization, an adversarial-robustness method with a high-probability condition; improved ResNet PGD robustness from 92% to 97% at 99% clean accuracy on MNIST and extended experiments to CIFAR-10.</li>
+            <li>Ran distributed PyTorch DDP training, ablations, and hyperparameter sweeps on Linux and Slurm HPC clusters with multi-node H100 GPUs, using reproducible configurations and experiment tracking.</li>
+          </ul>
         </div>
 
         <div class="job">
           <div>
-            <h3>Machine Learning Developer Intern</h3>
+            <h3>Machine Learning Research Intern</h3>
             <p class="meta">Kinaxis</p>
           </div>
           <p class="date">Sep–Dec 2024</p>
-          <p class="description">
-            Trained a policy-gradient agent to partition supply-chain optimization
-            graphs, reducing downstream solver time by 33 percent.
-          </p>
+          <ul class="description-list">
+            <li>Trained a policy-gradient reinforcement-learning agent for supply-chain graph partitioning, reducing downstream optimization solver time by 33%.</li>
+            <li>Evaluated reward functions, graph features, and rollout strategies; improved preprocessing runtime by 91% through algorithmic optimization.</li>
+          </ul>
         </div>
+
+        <div class="job">
+          <div>
+            <h3>Software Developer Intern</h3>
+            <p class="meta">Emids</p>
+          </div>
+          <p class="date">Jun–Sep 2024</p>
+          <ul class="description-list">
+            <li>Built an autonomous LLM agent that generates, tests, and refines SQL queries for natural-language data retrieval, reducing complex-query errors by 80%.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Selected Research Projects</h2>
+
+        <article class="project">
+          <h3>Commitment and Revision Circuits in Diffusion Language Models</h3>
+          <p class="meta">PyTorch · sparse autoencoders · LLaDA/Dream</p>
+          <p>
+            Investigated diffusion-language-model token commitment and revision using
+            mechanistic interpretability, sparse autoencoders, hidden-state analysis,
+            and causal interventions; evaluated decoding policies.
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>Decision-Preserving World-Model Compression</h3>
+          <p class="meta">Planning · reinforcement learning</p>
+          <p>
+            Developed compact world-model representations that preserved near-full
+            planning performance with approximately one percent of the original state space.
+          </p>
+          <p><a href="https://drive.google.com/file/d/1hDI-BCYn-GuKxe_U9WSLqBFvFeeJhH01/view?usp=sharing" target="_blank" rel="noreferrer">Writeup</a></p>
+        </article>
+      </section>
+
+      <section id="awards">
+        <h2>Award</h2>
+        <article class="award">
+          <h3>Hack the North Sponsor Prize <span class="meta">· 2024</span></h3>
+          <p>
+            Built an LLM, vector-database, and AlphaFold application for
+            natural-language gene-sequence generation and verification.
+          </p>
+        </article>
       </section>
 
       <section id="about">
         <h2>About</h2>
         <p>
           I am completing an Honours Bachelor of Mathematics at the University of
-          Ottawa, expected in 2027. My research combines theory and experiment across
-          deep learning, reinforcement learning, and optimization, with large-scale
-          empirical work using PyTorch, JAX, distributed training, Slurm, and
-          multi-node H100 systems.
+          Ottawa, expected in May 2027, with a 3.8/4.0 GPA. I received the Victor
+          Linis Mathematics Scholarship and an NSERC USRA research grant. My research
+          combines theory and experiment across deep learning, reinforcement learning,
+          optimization, and large-scale empirical systems.
+        </p>
+        <p class="coursework">
+          Relevant coursework includes mathematical machine learning, probability,
+          statistics, time-series analysis, linear algebra, algorithms, and operating systems.
         </p>
       </section>
     </main>
